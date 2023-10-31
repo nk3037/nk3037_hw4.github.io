@@ -1,0 +1,57 @@
+---
+title: "Academic and Work Experience"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+# Navya Koneripalli
+navya2988@yahoo.com | +1 651 260 6579 | New York City
+
+### Education
+**MPH, Columbia University - New York City**					                    Sep 22 - May 24
+
+Epidemiology, Applied Biostatistics and Public Health Data Science, GPA: 4.13/4.00
+
+**B.A., University of Minnesota – Minneapolis**		                        Sep 18 - Dec 21
+
+Human Physiology (Major), Public Health (Minor)
+
+* Dean’s List: Spring 2020, Fall 2020, Spring 2022
+
+* Undergraduate Thesis: Role of Fecal Microbiota Transplantation (FMT) in regulating colitis-induced intestinal inflammation through T-cell and cytokine secretion. 
+Advisor: Dr. Byron Vaughn
+
+### Experience
+
+**Intern, Boston Scientific Corporation (BSC) - Arden Hills, MN**	        May 23 - Aug 23
+
+* Project #1: Performed analysis to identify growth opportunities in BSC’s atrial fibrillation and stroke therapeutic solutions business. This data-driven approach addressed dual objectives of expanding business and meeting BSC’s DE&I and community health goals. Developed a framework - informed by data and analytics - to forge partnerships between BSC and local hospitals to deliver equitable care. 
+* Project #2: Performed demographic analysis with the goal of improving enrollment of women, and persons of color in clinical trials (in anticipation of changing FDA regulations). Used publicly-available Medicare claims and US census data to identify key enrollment sites to target at a county and zip code level.
+
+**Graduate Assistant, Columbia University - New York, NY** 
+
+* Research Assistant (2022-2023): Data analysis, modeling & visualization using R. Studied COVID-19 transmission patterns & incorporated virus concentration levels in NYC sewers to build improved epidemiological models. Worked under the guidance of Dr. Shaman.
+* Teaching Assistant (Fall 2023): i) Statistical Computing with SAS, ii) Global & Developmental Perspectives
+
+**Research Assistant, University of Minnesota - Twin Cities, MN**
+
+* **Dept. of Integrative Biology & Physiology (Mar 21 - Aug 22)**: Investigated the relationship between dietary ketones & inflammation by examining the role of O-GlcNAc protein modification on ketone metabolism, anti-parasitic response & intestinal homeostasis. Performed cell culture & molecular biology experiments
+* **Dept. of Gastroenterology, Hepatology & Nutrition (May 19 - Dec 21)**: Built a repository of biopsy samples collected during colonoscopies and endoscopies. Led the Biopsy Associated Microbiome study to organize and record microbiome data. Conducted clinical studies on Fecal Matter Transplant under Dr. Alexander Khoruts. In Summer 2020, due to COVID-19 and limited access to the lab, helped to develop the University of Minnesota’s Microbiota Therapeutics website (https://microbiota-therapeutics.umn.edu/)
+
+### Skills
+* **Programming**: R, SAS (Statistical Analysis System), SQL, Epic Systems, REDCap, Website development
+
+* **Laboratory**: Cellular/Molecular biology techniques, Mouse colony maintenance, Embalming and Phlebotomy
+
+* **Key Courses**: Relational Databases & SQL Programming, Applied Regression I, Data Science I
+
+### Refereed Publications
+
+* Zhao et al., (2022). Epithelial STAT6 O-GlcNAcylation drives a concerted anti-helminth alarmin response dependent on tuft cell hyperplasia and Gasdermin C. Immunity, 55(4), 623-638.
+
+### Community
+* **Teaching Assistant, S-PREP, Columbia University - New York, NY** Oct 22 - May 23
+
+Taught Algebra II and Trigonometry to NYC high school students. On a weekly basis, developed teaching materials, tests and homework.
+
