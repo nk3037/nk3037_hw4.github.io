@@ -1,0 +1,11 @@
+---
+title: "P8105 Fall 2023 Homework 4"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Testing to see if this works
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
