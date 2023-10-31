@@ -15,5 +15,15 @@ library(plotly)
 
 ```{r}
 data("instacart")
+
+instacart = instacart %>% 
+  filter (
+    order_dow == 5| order_dow == 6,
+    reordered == 1,
+    days_since_prior_order <= 14,
+    add_to_cart_order < 5) %>% 
+  select(-eval_set, -reordered)
+# filtering the instacart dataset to include orders that were ordered over the weekend, reordered and within the last 2 weeks and are in the first 5 items that people add to their carts
+
 ```
 
