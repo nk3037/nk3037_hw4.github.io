@@ -15,5 +15,6 @@ Here is a photo of me in Upstate NY last weekend!:
 ![](images/about_me.jpeg)
 
 ### Experience
+
 Here is a link to my work and academic experience:
 [Experience](experience.html)
