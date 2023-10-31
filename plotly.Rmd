@@ -24,6 +24,35 @@ instacart = instacart %>%
     add_to_cart_order < 5) %>% 
   select(-eval_set, -reordered)
 # filtering the instacart dataset to include orders that were ordered over the weekend, reordered and within the last 2 weeks and are in the first 5 items that people add to their carts
+```
+
+# Plots
+## Bar plot
+```{r}
+order_count = instacart %>%
+  group_by(order_hour_of_day) %>%
+  summarise(count = n())
+
+x_labels = 0:24
+
+order_count %>%
+  plot_ly(x = ~order_hour_of_day, y = ~count, type = "bar") %>%
+  layout(xaxis = list(type = "category", tickmode = "array", tickvals = x_labels, ticktext = x_labels, title = "Orders by hour of the day"))
+```
+
+## Box plot
+```{r}
+instacart = instacart %>%
+  mutate(day = ifelse(order_dow == 5, "Saturday","Sunday"))
+
+instacart %>%
+  plot_ly(x = ~day, y = ~days_since_prior_order, type = "box")
+
+```
+
+line graph - which aisle had the most orders
+
+```{r}
 
 ```
 
