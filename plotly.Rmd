@@ -7,12 +7,13 @@ output:
 ---
 I will be using the "Instacart" dataset
 
-```{r}
+```{r, message = FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
 
+I am filtering the instacart dataset to include orders that were ordered over the weekend, reordered and within the last 2 weeks and are in the first 5 items that people add to their carts.
 ```{r}
 data("instacart")
 
@@ -23,20 +24,19 @@ instacart = instacart %>%
     days_since_prior_order <= 14,
     add_to_cart_order < 5) %>% 
   select(-eval_set, -reordered)
-# filtering the instacart dataset to include orders that were ordered over the weekend, reordered and within the last 2 weeks and are in the first 5 items that people add to their carts
 ```
 
 # Plots
-## Bar plot
+## Line graph
 ```{r}
 order_count = instacart %>%
   group_by(order_hour_of_day) %>%
   summarise(count = n())
 
-x_labels = 0:24
+x_labels = 0:23
 
 order_count %>%
-  plot_ly(x = ~order_hour_of_day, y = ~count, type = "bar") %>%
+  plot_ly(x = ~order_hour_of_day, y = ~count, type = "scatter", mode = "lines+markers") %>%
   layout(xaxis = list(type = "category", tickmode = "array", tickvals = x_labels, ticktext = x_labels, title = "Orders by hour of the day"))
 ```
 
@@ -50,9 +50,19 @@ instacart %>%
 
 ```
 
-line graph - which aisle had the most orders
-
+bar graph - which aisle had the most orders
+## Bar graph
 ```{r}
+orders_by_dept_count = instacart %>%
+  group_by(department) %>%
+  summarise(count = n())
 
+max_count = max(orders_by_dept_count$count)
+
+y_labels <- seq(0, max_count, by = 1000)
+
+orders_by_dept_count%>%
+  plot_ly(x = ~department, y = ~count, type = "bar") %>%
+  layout(yaxis = list(title = "Count", tickvals = y_labels))
 ```
 
