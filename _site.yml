@@ -5,10 +5,14 @@ navbar:
   right:
     - text: "About"
       href: index.html
+    - text: "Experience"
+      href: 
     - icon: fa-envelope fa-lg
       href: mailto:<nk3037@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: https://github.com/nk3037/nk3037_hw4.github.io
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/navya-koneripalli/
 output:
   html_document:
     theme: paper

@@ -13,7 +13,3 @@ Hello! My name is Navya Koneripalli. I am a second-year MPH student in the Epide
 Here is a photo of me in Upstate NY last weekend!:
 
 ![](images/about_me.jpeg)
-
-### Important Links
-* [Github](https://github.com/nk3037/nk3037_hw4.github.io)
- * [LinkedIn](https://www.linkedin.com/in/navya-koneripalli/)
