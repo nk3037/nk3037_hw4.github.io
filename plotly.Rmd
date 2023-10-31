@@ -1,0 +1,19 @@
+---
+title: "Flexdashboard"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+I will be using the "Instacart" dataset
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("instacart")
+```
+
