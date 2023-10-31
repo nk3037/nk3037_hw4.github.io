@@ -5,7 +5,6 @@ output:
     toc: true
     toc_float: true
 ---
-
-# Testing to see if this works
-
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+# Welcome!
+### About me
+ Hello! My name is Navya Koneripalli. I am a second-year MPH student in the Epidemiology department with a certificate in Applied Biostatistics. 
