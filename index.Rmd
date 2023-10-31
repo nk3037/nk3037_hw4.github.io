@@ -11,10 +11,10 @@ output:
 Hello! My name is Navya Koneripalli. I am a second-year MPH student in the Epidemiology department with a certificate in Applied Biostatistics. I am from Minneapolis, MN but grew up between the US, India and Singapore. In my free time I enjoy trying new restaurants and watching bad reality tv.
 
 Here is a photo of me in Upstate NY last weekend!:
-
-![](images/about_me.jpeg)
+<img src ="images/about_me.jpeg" style ="width:75%">
 
 ### Experience
 
 Here is a link to my work and academic experience:
+
 [Experience](experience.html)
