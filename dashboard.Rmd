@@ -1,0 +1,77 @@
+---
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+library(flexdashboard)
+```
+
+```{r}
+data("instacart")
+
+instacart = instacart %>% 
+  filter (
+    order_dow == 5| order_dow == 6,
+    reordered == 1,
+    days_since_prior_order <= 14,
+    add_to_cart_order < 5) %>% 
+  select(-eval_set, -reordered)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+```{r}
+orders_by_dept_count = instacart %>%
+  group_by(department) %>%
+  summarise(count = n())
+
+max_count = max(orders_by_dept_count$count)
+
+y_labels <- seq(0, max_count, by = 1000)
+
+orders_by_dept_count%>%
+  plot_ly(x = ~department, y = ~count, type = "bar") %>%
+  layout(yaxis = list(title = "# of orders", tickvals = y_labels))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart = instacart %>%
+  mutate(day = ifelse(order_dow == 5, "Saturday","Sunday"))
+
+instacart %>%
+  plot_ly(x = ~day, y = ~days_since_prior_order, type = "box") %>%
+  layout(
+    yaxis = list(title = "# of days since last order")
+  )
+```
+
+### Chart C
+
+```{r}
+order_count = instacart %>%
+  group_by(order_hour_of_day) %>%
+  summarise(count = n())
+
+x_labels = 0:23
+
+order_count %>%
+  plot_ly(x = ~order_hour_of_day, y = ~count, type = "scatter", mode = "lines+markers") %>%
+  layout(xaxis = list(type = "category", tickmode = "array", tickvals = x_labels, ticktext = x_labels, title = "Hour of the day"), yaxis = list(title = "# of orders"))
+```
+

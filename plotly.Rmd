@@ -39,6 +39,8 @@ order_count %>%
   plot_ly(x = ~order_hour_of_day, y = ~count, type = "scatter", mode = "lines+markers") %>%
   layout(xaxis = list(type = "category", tickmode = "array", tickvals = x_labels, ticktext = x_labels, title = "Orders by hour of the day"))
 ```
+
+
 ## Box plot
 ```{r}
 instacart = instacart %>%
