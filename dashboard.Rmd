@@ -30,7 +30,7 @@ instacart = instacart %>%
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Chart A - Bar graph of # of orders by department
 ```{r}
 orders_by_dept_count = instacart %>%
   group_by(department) %>%
@@ -48,8 +48,7 @@ orders_by_dept_count%>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
-
+### Chart B - Box plot of the distribuition of # of days since last order on Saturdays and Sundays
 ```{r}
 instacart = instacart %>%
   mutate(day = ifelse(order_dow == 5, "Saturday","Sunday"))
@@ -61,8 +60,7 @@ instacart %>%
   )
 ```
 
-### Chart C
-
+### Chart C - Line graph of the number of distribuition of orders across hours of the day
 ```{r}
 order_count = instacart %>%
   group_by(order_hour_of_day) %>%
